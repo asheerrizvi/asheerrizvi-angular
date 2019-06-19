@@ -1,8 +1,13 @@
-.navbar-item {
+@media only screen and (min-width: 768px) {
+  .navbar-menu-item {
     margin-left: 2.5rem;
-}
+  }
 
-.hover-effect:before {
+  .last-navbar-menu-item {
+    margin-right: 2.5rem;
+  }
+
+  .hover-effect:before {
     content: "";
     position: absolute;
     width: 100%;
@@ -14,9 +19,13 @@
     border-radius: 2px;
     transform: scaleX(0);
     transition: .25s linear;
-}
-.hover-effect:hover:before,
-.hover-effect:focus:before {
+  }
+
+  .hover-effect:hover:before,
+  .hover-effect:focus:before {
   visibility: visible;
   transform: scaleX(1);
+  }
 }
+
+
