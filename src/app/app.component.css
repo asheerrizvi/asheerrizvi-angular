@@ -1,0 +1,29 @@
+@media only screen and (min-width: 768px) {
+  .navbar-menu-item {
+    margin-left: 2.5rem;
+  }
+
+  .last-navbar-menu-item {
+    margin-right: 2.5rem;
+  }
+
+  .hover-effect:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: rgb(190, 190, 190);
+    visibility: hidden;
+    border-radius: 4px;
+    transform: scaleX(0);
+    transition: 0.08s linear;
+  }
+
+  .hover-effect:hover:before,
+  .hover-effect:focus:before {
+  visibility: visible;
+  transform: scaleX(1);
+  }
+}
