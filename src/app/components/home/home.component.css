@@ -1,0 +1,38 @@
+@media only screen and (min-width: 768px) {
+    .home-container {
+        padding: 40px;
+    }
+
+    .greeting {
+        font-size: 40px;
+        margin-bottom: 2% !important;
+    }
+
+    .primary-skills {
+        font-size: 25px;
+    }
+
+    .button {
+        margin-top: 5%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .home-container {
+        padding: 40px;
+    }
+
+    .greeting {
+        font-size: 30px;
+        margin-bottom: 4% !important;
+    }
+
+    .primary-skills {
+        font-size: 18px;
+    }
+
+    .button {
+        display: block;
+        margin: 14% auto 5% auto !important;
+    }
+}
