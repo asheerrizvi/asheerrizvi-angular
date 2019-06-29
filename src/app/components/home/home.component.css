@@ -1,6 +1,14 @@
 @media only screen and (min-width: 768px) {
+    .section {
+        padding: 1rem 1.5rem;
+    }
+
     .home-container {
         padding: 40px;
+    }
+
+    #on-mobile {
+        visibility: hidden;
     }
 
     .greeting {
@@ -18,6 +26,10 @@
 }
 
 @media only screen and (max-width: 768px) {
+    .section {
+        padding: 3rem 1.5rem;
+    }
+
     .home-container {
         padding: 40px;
     }
@@ -33,6 +45,6 @@
 
     .button {
         display: block;
-        margin: 14% auto 5% auto !important;
+        margin: 4rem auto 0rem auto !important;
     }
 }
