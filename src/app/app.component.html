@@ -1,40 +1,44 @@
-<nav class="navbar is-transparent is-fixed-top">
-    <div class="navbar-brand">
-        <a class="navbar-item" href="#">
-            <img src="https://bulma.io/images/bulma-logo.png" alt="Hey There! I am Asheer" width="112" height="28">
-        </a>
+<section class="section">
+    <div class="container">
+        <nav class="navbar is-transparent">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="#">
+                    <img src="https://bulma.io/images/bulma-logo.png" alt="Hey There! I am Asheer" width="112" height="28">
+                </a>
 
-        <a role="button" class="navbar-burger burger" (click)="toggleNavbar()" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" #navBurger>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-        </a>
+                <a role="button" class="navbar-burger burger" (click)="toggleNavbar()" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" #navBurger>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="navbarExampleTransparentExample" class="navbar-menu" #navMenu>
+                <div class="navbar-end">
+                    <span class="navbar-item item-hover-home" (click)="scrollToElement(homeTarget)">
+                        Home
+                    </span>
+
+                    <span class="navbar-item item-hover-skills" (click)="scrollToElement(skillsTarget)">
+                        Skills
+                    </span>
+
+                    <span class="navbar-item item-hover-repos" (click)="scrollToElement(reposTarget)">
+                        Repos
+                    </span>
+
+                    <span class="navbar-item item-hover-about" (click)="scrollToElement(aboutTarget)">
+                        About
+                    </span>
+
+                    <span class="navbar-item item-hover-contact" (click)="scrollToElement(contactTarget)">
+                        Contact
+                    </span>
+                </div>
+            </div>
+        </nav>
     </div>
-
-    <div id="navbarExampleTransparentExample" class="navbar-menu" #navMenu>
-        <div class="navbar-end">
-            <a class="navbar-item navbar-menu-item hover-effect" (click)="scrollToElement(homeTarget)">
-                Home
-            </a>
-
-            <a class="navbar-item navbar-menu-item hover-effect" (click)="scrollToElement(skillsTarget)">
-                Skills
-            </a>
-
-            <a class="navbar-item navbar-menu-item hover-effect" (click)="scrollToElement(reposTarget)">
-                Repos
-            </a>
-
-            <a class="navbar-item navbar-menu-item hover-effect" (click)="scrollToElement(aboutTarget)">
-                About
-            </a>
-
-            <a class="navbar-item navbar-menu-item hover-effect last-navbar-menu-item" (click)="scrollToElement(contactTarget)">
-                Contact
-            </a>
-        </div>
-    </div>
-</nav>
+</section>
 
 <!-- Things to improve in future: 
     1. Implement closing of expanded burger navbar menu on mobile devices when a user touches the screen outside the expanded menu.
@@ -44,7 +48,7 @@
 <div #homeTarget>
     <app-home></app-home>
 </div>
-
+<div class="container"><hr></div>
 <div #skillsTarget>
     <app-skills></app-skills>
 </div>

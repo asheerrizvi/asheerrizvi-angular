@@ -3,14 +3,6 @@
         padding: 1rem 1.5rem;
     }
 
-    .home-container {
-        padding: 40px;
-    }
-
-    #on-mobile {
-        visibility: hidden;
-    }
-
     .greeting {
         font-size: 40px;
         margin-bottom: 2% !important;
@@ -28,10 +20,6 @@
 @media only screen and (max-width: 768px) {
     .section {
         padding: 3rem 1.5rem;
-    }
-
-    .home-container {
-        padding: 40px;
     }
 
     .greeting {

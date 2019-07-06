@@ -1,29 +1,53 @@
 @media only screen and (min-width: 768px) {
-  .navbar-menu-item {
-    margin-left: 2.5rem;
+  span {
+    font-size: 1.1rem;
+    margin-left: 2rem;
   }
 
-  .last-navbar-menu-item {
-    margin-right: 2.5rem;
-  }
-
-  .hover-effect:before {
-    content: "";
+  [class*="item-hover-"]:after {
+    content: '';
     position: absolute;
-    width: 100%;
-    height: 2px;
     bottom: 0;
     left: 0;
-    background: rgb(190, 190, 190);
-    visibility: hidden;
-    border-radius: 4px;
-    transform: scaleX(0);
-    transition: 0.08s linear;
+    width: 0%;
+    transition: 0.4s;
   }
 
-  .hover-effect:hover:before,
-  .hover-effect:focus:before {
-  visibility: visible;
-  transform: scaleX(1);
+  [class*="item-hover-"]:hover:after {
+    width: 100%;
   }
+
+  .item-hover-home:after {
+    border-bottom: 2px solid rgb(255, 97, 102);
+  }
+
+  .item-hover-skills:after {
+    border-bottom: 2px solid rgb(255, 208, 0);
+  }
+
+  .item-hover-repos:after {
+    border-bottom: 2px solid rgb(51, 255, 0);
+  }
+
+  .item-hover-about:after {
+    border-bottom: 2px solid rgb(65, 178, 248);
+  }
+
+  .item-hover-contact:after {
+    border-bottom: 2px solid rgb(178, 123, 255);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .section {
+    padding: 2rem 0.75rem 1rem 0.75rem;
+  }
+}
+
+hr {
+  margin: 0;
+}
+
+span {
+  cursor: pointer;
 }
