@@ -1,5 +1,46 @@
-.comp-title {
-    font-size: 30px;
+.subtitle.is-2 {
     text-decoration: underline;
     text-decoration-color: rgb(255, 208, 0);
+    margin-bottom: 0;
+}
+
+.subtitle {
+    padding-top: 0.5rem;
+}
+
+.column-heading {
+    font-size: 24px;
+    padding-top: 1.5rem;
+}
+
+.skills {
+    padding-top: 1rem;
+}
+
+.tag.is-light {
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.tag.is-light.margin {
+    margin: 0.5rem 0.5rem 0 0;
+}
+
+.column.sub-column{
+    padding-top: 0.4rem;
+}
+
+.sub-column {
+    padding: 0;
+}
+
+li {
+    padding-top: 0.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .column-heading {
+        font-size: 24px;
+        padding-top: 1.8rem;
+    }
 }
