@@ -1,3 +1,29 @@
-<p style="font-size: 70px; padding-top: 400px; padding-bottom: 400px; background-color: #FFB85F; text-align: center;">
-  Repos Works!
-</p>
+<section class="section">
+  <div class="container">
+    <h3 class="subtitle is-2">Repos</h3>
+    <div class="columns is-multiline" >
+      <div class="column is-one-third" *ngFor="let repository of repositories">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-16by9">
+              <img src="{{repository?.img}}" alt="Placeholder image">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content">
+                <p class="title is-4">{{repository?.heading}}</p>
+              </div>
+            </div>
+        
+            <div class="content">
+              {{repository?.description}}
+              <br>
+              <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

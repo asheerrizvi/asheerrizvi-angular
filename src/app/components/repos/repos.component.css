@@ -1,0 +1,10 @@
+.columns {
+    padding-top: 2.25rem;
+    padding-bottom: 0.75rem;
+}
+
+.subtitle.is-2 {
+    text-decoration: underline;
+    text-decoration-color: rgb(51, 255, 0);
+    margin-bottom: 0;
+}
