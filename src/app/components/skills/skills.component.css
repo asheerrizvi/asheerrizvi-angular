@@ -1,19 +1,15 @@
-.columns {
-    padding-top: 1.5rem;
-}
-
 .subtitle.is-2 {
     text-decoration: underline;
     text-decoration-color: rgb(255, 208, 0);
-    margin-bottom: 0;
+    margin-bottom: 3rem;
 }
 
 .column-heading {
     font-size: 24px;
 }
 
-.skills {
-    padding-top: 1rem;
+.column-heading.heading-margin {
+    margin-top: 0.75rem;
 }
 
 .tag.is-light {
@@ -26,11 +22,7 @@
 }
 
 .column.sub-column{
-    padding-top: 0.4rem;
-}
-
-.sub-column {
-    padding: 0;
+    padding: 0.4rem 0.75rem 0.75rem 0;
 }
 
 li {

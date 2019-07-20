@@ -3,6 +3,7 @@
     <h3 class="subtitle is-2">Repos</h3>
     <div class="columns is-multiline" >
       <div class="column is-one-third" *ngFor="let repository of repositories">
+        <a href="{{repository?.link}}" target="_blank">
         <div class="card">
           <div class="card-image">
             <figure class="image is-16by9">
@@ -13,16 +14,17 @@
             <div class="media">
               <div class="media-content">
                 <p class="title is-4">{{repository?.heading}}</p>
+                <p class="subtitle is-6">{{repository?.tech.join(', ')}}</p>
               </div>
             </div>
         
             <div class="content">
               {{repository?.description}}
-              <br>
-              <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
             </div>
+            <a *ngIf="mobile">Read More</a>
           </div>
         </div>
+        </a>
       </div>
     </div>
   </div>
