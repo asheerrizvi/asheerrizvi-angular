@@ -1,0 +1,15 @@
+.subtitle.is-2 {
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 208, 0);
+    margin-bottom: 3rem;
+}
+
+.green {
+    background-color: #37e473 !important;
+    border-color: #37e473 !important;
+}
+
+.red {
+    background-color: #ff4f4f !important;
+    border-color: #ff4f4f !important;
+}

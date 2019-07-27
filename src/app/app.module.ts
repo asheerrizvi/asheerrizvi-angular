@@ -4,18 +4,20 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { SkillsComponent } from './components/skills/skills.component';
-import { ReposComponent } from './components/repos/repos.component';
+import { WorkComponent } from './components/work/work.component';
 import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { ExperienceComponent } from './components/experience/experience.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     SkillsComponent,
-    ReposComponent,
+    WorkComponent,
     AboutComponent,
     ContactComponent,
+    ExperienceComponent,
   ],
   imports: [
     BrowserModule
