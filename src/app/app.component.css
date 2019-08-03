@@ -36,11 +36,19 @@
   .item-hover-contact:after {
     border-bottom: 2px solid rgb(178, 123, 255);
   }
+
+  footer {
+    margin-top: 1.5rem;
+  }
 }
 
 @media only screen and (max-width: 768px) {
   .section {
     padding: 2rem 0.75rem 1rem 0.75rem;
+  }
+
+    footer {
+    margin-top: 1.5rem;
   }
 }
 

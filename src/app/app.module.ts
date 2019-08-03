@@ -23,7 +23,7 @@ import { from } from 'rxjs';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
