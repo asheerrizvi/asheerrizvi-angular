@@ -1,3 +1,71 @@
-<p style="font-size: 70px; padding-top: 400px; padding-bottom: 400px; background-color: rgb(255, 255, 255); text-align: center;">
-  Contact Works!
-</p>
+<section class="section">
+  <div class="container">
+    <h3 class="subtitle is-2">Contact</h3>
+    <form (ngSubmit)="onSubmit(contactForm)"  #contactForm="ngForm">
+      <div class="columns is-centered">
+        <div class="column is-one-quarter">
+          <div class="field">
+            <label class="label">Name</label>
+            <div class="control is-expanded">
+              <input class="input is-medium" type="text" id="name"
+              required
+              name="name" 
+              [(ngModel)]="newMessage.name" 
+              #name="ngModel">
+              <div *ngIf="name.invalid && (name.dirty || name.touched)">
+                <div *ngIf="name.errors.required">
+                  <p class="help is-danger">Name is required.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column is-one-quarter">
+          <div class="field">
+            <label class="label">Email</label>
+            <div class="control is-expanded">
+              <input class="input is-medium" type="email" id="email"
+              required
+              [pattern]="emailPattern"
+              name="email"
+              [(ngModel)]="newMessage.email"
+              #email="ngModel">
+              <div *ngIf="email.invalid && (email.dirty || email.touched)">
+                <div *ngIf="email.errors && email.errors.pattern"> 		   
+                  <p class="help is-danger">Email is not valid.</p>
+                </div>
+                <div *ngIf="email.errors.required">
+                  <p class="help is-danger">Email is required.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="columns is-centered">
+        <div class="column is-half">
+          <div class="field">
+            <label class="label">Mesasge</label>
+            <div class="control is-expanded">
+              <textarea class="textarea is-medium" rows="5"
+              required
+              name="message"
+              [(ngModel)]="newMessage.message"
+              #message="ngModel"></textarea>
+              <div *ngIf="message.invalid && (message.dirty || message.touched)">
+                <div *ngIf="message.errors.required">
+                  <p class="help is-danger">Message is required.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="columns is-centered" style="margin-top: 1rem;">
+        <div class="column is-one-fifth">
+          <button class="button is-primary is-rounded is-medium" [disabled]="!contactForm.form.valid"><span>Submit</span></button>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
