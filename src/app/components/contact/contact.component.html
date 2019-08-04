@@ -62,29 +62,59 @@
         </div>
       </div>
       <div class="columns is-centered" style="margin-top: 1.5rem; margin-bottom: 3rem;">
-        <div class="column is-one-fifth">
-          <button class="button is-primary is-rounded is-medium" [disabled]="!contactForm.form.valid"><span>Submit</span></button>
+        <div class="column is-narrow">
+          <button class="button is-primary is-rounded is-medium" [disabled]="!contactForm.form.valid" style="padding: 0 3rem;"><span>Submit</span></button>
         </div>
       </div>
     </form>
     <div class="columns is-centered" style="margin-top: 1.5rem;">
-      <div class="column is-one-quarter">
-        <a class="button is-large">
+      <div class="column is-narrow">
+        <p class="column-heading">My Social Media</p>
+      </div>
+    </div>
+    <div class="columns is-centered" style="margin-top: 1.5rem;">
+      <div class="column is-narrow">
+        <a class="button is-large social-media" href="https://twitter.com/farleymatters" target="_blank">
+          <span class="icon is-small">
+            <svg class="fab fa-twitter"></svg>
+          </span>
+        </a>
+        <a class="button is-large social-media">
           <span class="icon is-small">
             <i class="fab fa-github"></i>
           </span>
         </a>
-        <a class="button is-large">
+        <a class="button is-large social-media">
           <span class="icon is-small">
-            <i class="fab fa-github"></i>
+            <i class="fab fa-facebook-f"></i>
           </span>
         </a>
-        <a class="button is-large">
+        <a class="button is-large social-media">
           <span class="icon is-small">
-            <i class="fab fa-github"></i>
+            <i class="fas fa-envelope"></i>
           </span>
         </a>
       </div>
     </div>
+      
+      
+      
+      <!-- <div class="column is-one-quarter">
+        <a class="button is-large">
+          <span class="icon is-small">
+            <i class="fab fa-github"></i>
+          </span>
+        </a>
+        <a class="button is-large">
+          <span class="icon is-small">
+            <i class="fab fa-github"></i>
+          </span>
+        </a>
+        <a class="button is-large">
+          <span class="icon is-small">
+            <i class="fab fa-github"></i>
+          </span>
+        </a>
+      </div> -->
   </div>
 </section>

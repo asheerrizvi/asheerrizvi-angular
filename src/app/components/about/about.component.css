@@ -4,16 +4,6 @@
     margin-bottom: 3rem;
 }
 
-.column-heading {
-    font-size: 18px;
-    font-weight: 900;
-    text-transform: uppercase;
-}
-
 .column-heading.heading-margin {
     margin-top: 1rem;
-}
-
-.item-padding {
-    padding-top: 0.5rem;
 }

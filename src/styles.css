@@ -2,3 +2,14 @@
 body {
     font-family: 'Lato', sans-serif !important;
 }
+
+.column-heading {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    word-spacing: 0.2rem;
+}
+
+.item-padding {
+    padding-top: 0.5rem;
+}

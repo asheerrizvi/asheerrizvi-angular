@@ -4,12 +4,6 @@
     margin-bottom: 3rem;
 }
 
-.column-heading {
-    font-size: 18px;
-    font-weight: 900;
-    text-transform: uppercase;
-}
-
 .column-heading.heading-margin {
     margin-top: 0.75rem;
 }
@@ -25,10 +19,6 @@
 
 .column.sub-column{
     padding: 0.4rem 0.75rem 0.75rem 0;
-}
-
-.item-padding {
-    padding-top: 0.5rem;
 }
 
 @media only screen and (max-width: 768px) {
