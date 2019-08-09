@@ -1,6 +1,6 @@
-<section class="section">
+<section class="section" style="background-color: #FBFBFB;">
   <div class="container">
-    <h3 class="subtitle is-2">Contact</h3>
+    <h5 class="subtitle is-2">Contact</h5>
     <form (ngSubmit)="onSubmit(contactForm)"  #contactForm="ngForm">
       <div class="columns is-centered">
         <div class="column is-one-quarter">
@@ -61,60 +61,40 @@
           </div>
         </div>
       </div>
-      <div class="columns is-centered" style="margin-top: 1.5rem; margin-bottom: 3rem;">
+      <div class="columns is-centered is-mobile" style="margin-top: 1.5rem;">
         <div class="column is-narrow">
           <button class="button is-primary is-rounded is-medium" [disabled]="!contactForm.form.valid" style="padding: 0 3rem;"><span>Submit</span></button>
         </div>
       </div>
     </form>
-    <div class="columns is-centered" style="margin-top: 1.5rem;">
+    <div class="columns is-centered is-mobile" style="margin-top: 3.5rem; margin-bottom: 1.75rem;">
       <div class="column is-narrow">
         <p class="column-heading">My Social Media</p>
       </div>
     </div>
-    <div class="columns is-centered" style="margin-top: 1.5rem;">
+    <div class="columns is-centered is-mobile">
       <div class="column is-narrow">
-        <a class="button is-large social-media" href="https://twitter.com/farleymatters" target="_blank">
+        <a class="button is-large social-media" href="https://twitter.com/rizvi_asheer" target="_blank">
           <span class="icon is-small">
             <svg class="fab fa-twitter"></svg>
           </span>
         </a>
-        <a class="button is-large social-media">
+        <a class="button is-large social-media" href="https://github.com/asheerrizvi" target="_blank">
           <span class="icon is-small">
             <i class="fab fa-github"></i>
           </span>
         </a>
-        <a class="button is-large social-media">
+        <a class="button is-large social-media" href="https://www.facebook.com/rizvi.asheer" target="_blank">
           <span class="icon is-small">
             <i class="fab fa-facebook-f"></i>
           </span>
         </a>
-        <a class="button is-large social-media">
+        <a class="button is-large social-media" href="mailto:asheer.vil@gmail.com">
           <span class="icon is-small">
             <i class="fas fa-envelope"></i>
           </span>
         </a>
       </div>
     </div>
-      
-      
-      
-      <!-- <div class="column is-one-quarter">
-        <a class="button is-large">
-          <span class="icon is-small">
-            <i class="fab fa-github"></i>
-          </span>
-        </a>
-        <a class="button is-large">
-          <span class="icon is-small">
-            <i class="fab fa-github"></i>
-          </span>
-        </a>
-        <a class="button is-large">
-          <span class="icon is-small">
-            <i class="fab fa-github"></i>
-          </span>
-        </a>
-      </div> -->
   </div>
 </section>

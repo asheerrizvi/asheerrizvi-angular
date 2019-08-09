@@ -1,9 +1,3 @@
-.subtitle.is-2 {
-    text-decoration: underline;
-    text-decoration-color: rgb(255, 208, 0);
-    margin-bottom: 3rem;
-}
-
 .column-heading.heading-margin {
     margin-top: 0.75rem;
 }
@@ -19,11 +13,4 @@
 
 .column.sub-column{
     padding: 0.4rem 0.75rem 0.75rem 0;
-}
-
-@media only screen and (max-width: 768px) {
-    .column-heading {
-        font-size: 18px;
-        padding-top: 1.8rem;
-    }
 }

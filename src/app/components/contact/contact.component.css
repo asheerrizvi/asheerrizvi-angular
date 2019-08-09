@@ -1,25 +1,23 @@
-.subtitle.is-2 {
-    text-decoration: underline;
-    text-decoration-color: rgb(178, 123, 255);
-    margin-bottom: 3rem;
+@media only screen and (min-width: 768px) {
+    a {
+        margin: 0 1.4rem;
+    }
 }
 
-.column-heading.heading-margin {
-    margin-top: 1rem;
+@media only screen and (max-width: 768px) {
+    a {
+        margin: 0 0.9rem;
+    }
 }
 
 input, textarea {
     border-radius: 0.75rem;
 }
 
-.text-input.error {
-    background: rgb(255, 135, 135);
-}
-
-a {
-    margin: 1rem;
-}
-
 .social-media {
     border-radius: 100%;
+}
+
+.help {
+    font-size: 1rem;
 }

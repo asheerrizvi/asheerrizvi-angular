@@ -1,15 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
 body {
-    font-family: 'Lato', sans-serif !important;
+    font-family: 'Montserret', sans-serif !important;
 }
 
 .column-heading {
     font-size: 18px;
     font-weight: 600;
+    letter-spacing: 0.2rem;
     text-transform: uppercase;
     word-spacing: 0.2rem;
 }
 
 .item-padding {
     padding-top: 0.5rem;
+}
+
+.subtitle.is-2 {
+    font-size: 1.6rem !important;
+    font-weight: 700;
+    letter-spacing: 0.4rem !important;
+    margin-bottom: 3rem !important;
+    text-transform: uppercase;
+    text-align: center;
 }
