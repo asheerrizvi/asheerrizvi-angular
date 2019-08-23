@@ -11,7 +11,7 @@
 }
 
 input, textarea {
-    border-radius: 0.75rem;
+    border-radius: 0.25rem;
 }
 
 .social-media {
@@ -20,4 +20,20 @@ input, textarea {
 
 .help {
     font-size: 1rem;
+}
+
+.button {
+    border-color: #5d99fa;
+    color: #5d99fa;
+}
+
+.button.submit {
+    font-size: 1.15rem;
+    border-color: #5d99fa;
+    color: #5d99fa;
+}
+
+.button:hover {
+    background-color: #5d99fa;
+    color: white;
 }

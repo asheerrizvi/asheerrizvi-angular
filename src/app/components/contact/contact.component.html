@@ -1,7 +1,8 @@
 <section class="section" style="background-color: #FBFBFB;">
   <div class="container">
-    <h5 class="subtitle is-2">Contact</h5>
-    <form (ngSubmit)="onSubmit(contactForm)"  #contactForm="ngForm">
+    <h3 class="subtitle is-2">Contact</h3>
+    <h5 class="subtitle is-4">If you want to get in touch.</h5>
+    <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
       <div class="columns is-centered">
         <div class="column is-one-quarter">
           <div class="field">
@@ -61,17 +62,12 @@
           </div>
         </div>
       </div>
-      <div class="columns is-centered is-mobile" style="margin-top: 1.5rem;">
+      <div class="columns is-centered is-mobile" style="margin-top: 1.5rem; margin-bottom: 3rem;">
         <div class="column is-narrow">
-          <button class="button is-primary is-rounded is-medium" [disabled]="!contactForm.form.valid" style="padding: 0 3rem;"><span>Submit</span></button>
+          <button class="button is-outlined is-rounded is-large submit" [disabled]="!contactForm.form.valid" style="padding: 0 1.75rem;"><span>Submit</span></button>
         </div>
       </div>
     </form>
-    <div class="columns is-centered is-mobile" style="margin-top: 3.5rem; margin-bottom: 1.75rem;">
-      <div class="column is-narrow">
-        <p class="column-heading">My Social Media</p>
-      </div>
-    </div>
     <div class="columns is-centered is-mobile">
       <div class="column is-narrow">
         <a class="button is-large social-media" href="https://twitter.com/rizvi_asheer" target="_blank">
@@ -84,9 +80,9 @@
             <i class="fab fa-github"></i>
           </span>
         </a>
-        <a class="button is-large social-media" href="https://www.facebook.com/rizvi.asheer" target="_blank">
+        <a class="button is-large social-media" href="https://in.linkedin.com/in/asheer-rizvi" target="_blank">
           <span class="icon is-small">
-            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-linkedin-in"></i>
           </span>
         </a>
         <a class="button is-large social-media" href="mailto:asheer.vil@gmail.com">

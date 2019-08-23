@@ -1,12 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
-body {
+* {
     font-family: 'Montserret', sans-serif !important;
 }
 
 .column-heading {
-    font-size: 18px;
-    font-weight: 600;
-    letter-spacing: 0.2rem;
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 0.15rem;
     text-transform: uppercase;
     word-spacing: 0.2rem;
 }
@@ -16,10 +16,18 @@ body {
 }
 
 .subtitle.is-2 {
-    font-size: 1.6rem !important;
+    font-size: 1.2rem !important;
     font-weight: 700;
-    letter-spacing: 0.4rem !important;
-    margin-bottom: 3rem !important;
+    letter-spacing: 0.35rem !important;
+    margin-bottom: 1.35rem !important;
     text-transform: uppercase;
+    text-align: center;
+}
+
+.subtitle.is-4 {
+    font-size: 1.35rem !important;
+    font-family: 'Merriweather', serif !important;
+    letter-spacing: 0.25rem !important;
+    margin-bottom: 3rem !important;
     text-align: center;
 }
