@@ -8,12 +8,10 @@
     border-color: #ff4f4f !important;
 }
 
-@media only screen and (min-width: 768px) {
-    p.heading {
-        font-size: 0.85rem;
-    }
+p {
+    font-size: 1rem;
+}
 
-    p {
-        font-size: 1.1rem;
-    }
+p.heading {
+    font-size: 0.85rem;
 }

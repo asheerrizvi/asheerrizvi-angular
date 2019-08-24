@@ -1,0 +1,14 @@
+/* p {
+    font-size: 0.95rem;
+} */
+
+span, li {
+    font-size: 0.95rem;
+}
+
+.sub-heading {
+    display: inline-block;
+    font-size: 0.95rem;
+    font-weight: bold;
+    margin-bottom: 0 !important;
+}

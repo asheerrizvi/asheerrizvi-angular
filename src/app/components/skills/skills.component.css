@@ -1,3 +1,7 @@
+li {
+    font-size: 0.95rem;
+}
+
 .column-heading.heading-margin {
     margin-top: 0.75rem;
 }
@@ -14,4 +18,9 @@
 
 .column.sub-column{
     padding: 0.4rem 0.75rem 0.75rem 0;
+}
+
+.sub-heading {
+    display: inline-block;
+    font-weight: bold;
 }
