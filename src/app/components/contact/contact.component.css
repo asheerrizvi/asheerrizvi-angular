@@ -37,3 +37,19 @@ input, textarea {
     background-color: #5d99fa;
     color: white;
 }
+
+.is-loading {
+    background-color: #5d99fa;
+}
+
+.pending {
+    color: #f5c423;
+}
+
+.success {
+    color: #85d800;
+}
+
+.failure {
+    color: #f05e59;
+}
