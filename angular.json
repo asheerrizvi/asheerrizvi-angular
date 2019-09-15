@@ -28,7 +28,7 @@
               "./node_modules/bulma/css/bulma.css",
               "./node_modules/bulma-extensions/bulma-timeline/dist/css/bulma-timeline.min.css",
               "./node_modules/bulma-extensions/bulma-divider/dist/css/bulma-divider.min.css",
-              "./node_modules/sal.js/dist/sal.css"
+              "./node_modules/aos/dist/aos.css"
             ],
             "scripts": []
           },

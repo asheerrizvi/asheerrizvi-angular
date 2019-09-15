@@ -26,7 +26,7 @@ import { from } from 'rxjs';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [
     MailService,

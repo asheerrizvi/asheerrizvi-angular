@@ -1,5 +1,5 @@
 import { Component, ViewChild, ElementRef, OnInit } from '@angular/core';
-import * as sal from 'sal.js';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-root',
@@ -13,10 +13,7 @@ export class AppComponent implements OnInit {
   @ViewChild('navMenu', {static: false}) navMenu: ElementRef;
 
   ngOnInit() {
-    sal({
-      threshold: 0,
-      once: true,
-    });
+    AOS.init();
   }
 
   toggleNavbar() {
@@ -26,6 +23,6 @@ export class AppComponent implements OnInit {
 
   scrollToElement($element): void {
     console.log($element);
-    $element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+    $element.scrollIntoView({behavior: 'smooth', block: 'start', inline: 'nearest'});
   }
 }

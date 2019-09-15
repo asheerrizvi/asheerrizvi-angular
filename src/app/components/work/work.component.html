@@ -1,15 +1,15 @@
-<section class="section" style="background-color: #FBFBFB;">
-  <div class="container"
-    data-sal="slide-up"
-    data-sal-duration="1200"
-    data-sal-delay="300"
-    data-sal-easing="ease-out-bounce"
-  >
+<section class="section" style="background-color: #FBFBFB;"
+  data-aos-duration="1200"
+  data-aos-delay="300"
+  data-aos="fade-up" 
+  data-aos-once="true"
+  data-aos-offset="300"
+>
+  <div class="container">
     <h3 class="subtitle is-2">My Work</h3>
     <h5 class="subtitle is-4">Personal projects & work.</h5>
-    <div class="columns is-multiline" >
+    <div class="columns is-multiline">
       <div class="column is-one-third" *ngFor="let repository of repositories">
-        <a href="{{repository?.link}}" target="_blank">
         <div class="card">
           <div class="card-image">
             <figure class="image is-16by9">
@@ -27,10 +27,9 @@
             <div class="content">
               {{repository?.description}}
             </div>
-            <a *ngIf="mobile">Read More</a>
+            <a href="{{repository?.link}}" target="_blank">Read More</a>
           </div>
         </div>
-        </a>
       </div>
     </div>
   </div>

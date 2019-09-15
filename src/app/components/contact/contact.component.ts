@@ -11,7 +11,7 @@ export class ContactComponent implements OnInit {
   public newMessage: Contact;
   public messageSuccess;
   public returnMessage;
-  emailPattern = "^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$";
+  emailPattern = '^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$';
 
   constructor(private mailservice: MailService) { }
 
@@ -24,7 +24,7 @@ export class ContactComponent implements OnInit {
       name: '',
       email: '',
       message: ''
-    }
+    };
   }
 
   public onSubmit(contactForm) {
@@ -32,18 +32,16 @@ export class ContactComponent implements OnInit {
     this.returnMessage = 'Your message is being sent...';
     this.mailservice.sendMessage(this.newMessage).subscribe(
       MailResponse => {
-        if(MailResponse.success == true) {
+        if (MailResponse.success === true) {
           this.messageSuccess = 'success';
           this.returnMessage = 'Success: Message Sent!';
           contactForm.resetForm();
-        }
-        else {
+        } else {
           this.messageSuccess = 'failure';
           this.returnMessage = 'Failure: Message Not Sent!';
           console.log(MailResponse.message);
         }
       }
     );
-  };
-
+  }
 }
