@@ -3,6 +3,14 @@
     font-family: 'Montserret', sans-serif !important;
 }
 
+input,
+textarea,
+button,
+select,
+a {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
 .column-heading {
     font-size: 0.95rem;
     font-weight: 700;

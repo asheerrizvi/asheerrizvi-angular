@@ -2,11 +2,35 @@
     a {
         margin: 0 1.4vw;
     }
+
+    .button:hover {
+        background-color: #5d99fa;
+        color: white !important;
+    }
+
+    .notification {
+        display: block;
+        position: fixed;
+        bottom: 3vh;
+        left: 3vh;
+    }
 }
 
 @media only screen and (max-width: 768px) {
     a {
         margin: 0 3.15vw;
+    }
+
+    .button:active {
+        background-color: #5d99fa;
+        color: white !important;
+    }
+
+    .notification {
+        width: 70vw;
+        position: fixed;
+        bottom: 2vh;
+        left: 2vh;
     }
 }
 
@@ -31,12 +55,10 @@ input, textarea {
     font-size: 1.15rem;
     border-color: #5d99fa;
     color: #5d99fa;
+    padding: 0 1.75rem;
 }
 
-.button:hover {
-    background-color: #5d99fa;
-    color: white;
-}
+
 
 .is-loading {
     background-color: #5d99fa;

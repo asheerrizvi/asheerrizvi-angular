@@ -1,7 +1,7 @@
-<section class="section" style="background-color: #FBFBFB;"
+<section class="section" style="background-color: #FBFBFB"
   data-aos-duration="1200"
   data-aos-delay="300"
-  data-aos="fade-up" 
+  data-aos="fade-up"
   data-aos-once="true"
   data-aos-offset="200"
 >
@@ -70,21 +70,10 @@
       </div>
       <div class="columns is-centered is-mobile" style="margin-top: 1.5rem; margin-bottom: 3rem;">
         <div class="column is-narrow">
-          <button *ngIf="messageSuccess !== 'pending'" class="button is-outlined is-rounded is-large submit" [disabled]="!contactForm.form.valid" style="padding: 0 1.75rem;"><span>Submit</span></button>
-          <button *ngIf="messageSuccess === 'pending'" class="button is-outlined is-rounded is-medium is-loading">Loading</button>
+          <button class="button is-rounded submit" [disabled]="!contactForm.form.valid"><span>Submit</span></button>
         </div>
       </div>
     </form>
-
-    <!-- <div class="columns is-centered is-mobile">
-      <div class="column is-2 is-narrow">
-        <div *ngIf="returnMessage" style="margin-bottom: 0.5rem;">
-          <p *ngIf="messageSuccess === 'pending'" class="pending" [innerHTML]="returnMessage"></p>
-          <p *ngIf="messageSuccess === 'success'" class="success" [innerHTML]="returnMessage"></p>
-          <p *ngIf="messageSuccess === 'failure'" class="failure" [innerHTML]="returnMessage"></p>
-        </div>
-      </div>
-    </div> -->
 
     <div class="columns is-centered is-mobile">
       <div class="column is-narrow">
@@ -112,3 +101,8 @@
     </div>
   </div>
 </section>
+
+<div class="notification is-primary" [@messageState]="state">
+  <button class="delete" (click)="closeNotification()"></button>
+  Thank you, let me get back to you. 🙂
+</div>

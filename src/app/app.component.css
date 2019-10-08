@@ -37,11 +37,39 @@
   .item-hover-contact:after {
     border-bottom: 3px solid #b27bff;
   }
+
+  .button {
+    border-color: #5d99fa;
+    color: #5d99fa;
+    position:fixed;
+    bottom:3vh !important;
+    right:3vh;
+    box-shadow: 5px 5px 10px rgba(14, 14, 14, 0.2);
+  }
+
+  .button:hover {
+    background-color: #5d99fa;
+    color: white;
+  }
 }
 
 @media only screen and (max-width: 768px) {
   .section {
     padding: 2rem 0.75rem 1rem 0.75rem;
+  }
+
+  .button {
+    border-color: #5d99fa;
+    color: #5d99fa;
+    position:fixed;
+    bottom:2vh;
+    right:2vh;
+    box-shadow: 5px 5px 10px rgba(14, 14, 14, 0.2);
+  }
+
+  .button:active {
+    background-color: #5d99fa;
+    color: white;
   }
 }
 
@@ -63,3 +91,10 @@ span {
   cursor: pointer;
 }
 
+.scroll-to-top {
+  opacity: 0;
+}
+
+.show-scroll {
+  opacity: 1;
+}

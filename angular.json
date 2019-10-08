@@ -30,7 +30,9 @@
               "./node_modules/bulma-extensions/bulma-divider/dist/css/bulma-divider.min.css",
               "./node_modules/aos/dist/aos.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/aos/dist/aos.js"
+            ]
           },
           "configurations": {
             "production": {

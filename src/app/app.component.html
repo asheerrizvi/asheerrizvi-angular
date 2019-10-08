@@ -1,4 +1,4 @@
-<section class="section">
+<section class="section" #topTarget>
     <div class="container">
         <nav class="navbar is-transparent">
             <div class="navbar-brand">
@@ -43,18 +43,6 @@
     <app-home></app-home>
 </div>
 
-
-
-<!-- Things to improve in future: 
-    1. Implement closing of expanded burger navbar menu on mobile devices when a user touches the screen outside the expanded menu.
-    2. The ScrollIntoView doesn't work on Safari iOS. Try finding a better solution. 
-    3. Do something about the space between Miscellaneous and Certifications on a mobile device. 
--->
-
-<!-- <div #homeTarget>
-    <app-home></app-home>
-</div> -->
-<!-- <div class="container"><hr></div> -->
 <div #skillsTarget>
     <app-skills></app-skills>
 </div>
@@ -74,7 +62,7 @@
 <footer class="footer">
     <div class="content has-text-centered">
         <p>
-            This website was crafted by <a href="https://jgthms.com">Asheer Rizvi</a><br>
+            This website was crafted by <a href="https://asheerrizvi.herokuapp.com">Asheer Rizvi</a><br>
             <a href="https://bulma.io" target="_blank">
                 <img src="https://bulma.io/images/made-with-bulma--semiblack.png" alt="Made with Bulma" width="165" height="35" style="margin-top: 1.4rem;">
             </a><br>
@@ -85,3 +73,17 @@
         </p>
     </div>
 </footer>
+
+<a class="button is-large scroll-to-top"
+    [ngClass]="{'show-scroll': showScroll}"
+    (click)="scrollToElement(topTarget)"
+    data-aos-duration="600"
+    data-aos-delay="200"
+    data-aos="zoom-in-left"
+    data-aos-once="false"
+    data-aos-offset="300"
+>
+    <span class="icon is-small">
+        <i class="fas fa-arrow-up"></i>
+    </span>
+</a>

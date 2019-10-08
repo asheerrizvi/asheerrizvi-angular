@@ -1,7 +1,7 @@
 <section class="section" style="background-color: #FBFBFB;"
   data-aos-duration="1200"
   data-aos-delay="300"
-  data-aos="fade-up" 
+  data-aos="fade-up"
   data-aos-once="true"
   data-aos-offset="200"
 >
@@ -9,25 +9,134 @@
     <h3 class="subtitle is-2">My Work</h3>
     <h5 class="subtitle is-4">Personal projects & work.</h5>
     <div class="columns is-multiline">
-      <div class="column is-one-third" *ngFor="let repository of repositories">
+      <div class="column is-one-third">
         <div class="card">
           <div class="card-image">
             <figure class="image is-16by9">
-              <img src="{{repository?.img}}" alt="Placeholder image">
+              <img src="https://bulma.io/images/placeholders/640x360.png" alt="Placeholder image">
             </figure>
           </div>
           <div class="card-content">
             <div class="media">
               <div class="media-content">
-                <p class="title is-5">{{repository?.heading}}</p>
-                <p class="subtitle is-6 ">{{repository?.tech.join(', ')}}</p>
+                <p class="title is-5">Asheer Rizvi</p>
+                <p class="subtitle is-6 ">Angular, NodeJS</p>
               </div>
             </div>
-        
             <div class="content">
-              {{repository?.description}}
+              Source code of my personal website developed through Angular and Bulma.io
             </div>
-            <a href="{{repository?.link}}" target="_blank">Read More</a>
+            <a href="https://github.com/asheerrizvi/asheerrizvi-angular" target="_blank">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="column is-one-third">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-16by9">
+              <img src="https://bulma.io/images/placeholders/640x360.png" alt="Placeholder image">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content">
+                <p class="title is-5">The Web Logs</p>
+                <p class="subtitle is-6 ">Angular, NodeJS, MongoDB, ExpressJS</p>
+              </div>
+            </div>
+            <div class="content">
+              An experimental MEAN stack blog developed as a personal project and hosted temporarily on Heroku.
+            </div>
+            <a href="https://bitbucket.org/Asheer/theweblogs-prod" target="_blank">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="column is-one-third">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-16by9">
+              <img src="https://bulma.io/images/placeholders/640x360.png" alt="Placeholder image">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content">
+                <p class="title is-5">Social Networks</p>
+                <p class="subtitle is-6 ">Java</p>
+              </div>
+            </div>
+            <div class="content">
+              A simulatory Java Program which models the flow of Information through Social Networks.
+            </div>
+            <a href="https://github.com/asheerrizvi/socialnetworks" target="_blank">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="column is-one-third">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-16by9">
+              <img src="https://bulma.io/images/placeholders/640x360.png" alt="Placeholder image">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content">
+                <p class="title is-5">Map Graph</p>
+                <p class="subtitle is-6 ">Java</p>
+              </div>
+            </div>
+            <div class="content">
+              A Google Maps clone, built using graphs utilizing BFS, Dijkstra & A* search.
+            </div>
+            <a href="https://github.com/asheerrizvi/mapgraph" target="_blank">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="column is-one-third">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-16by9">
+              <img src="https://bulma.io/images/placeholders/640x360.png" alt="Placeholder image">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content">
+                <p class="title is-5">Text Edit</p>
+                <p class="subtitle is-6 ">Java</p>
+              </div>
+            </div>
+            <div class="content">
+              Text editor with spelling suggestions, auto complete and other features built in Java.
+            </div>
+            <a href="https://github.com/asheerrizvi/textedit" target="_blank">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="column is-one-third">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-16by9">
+              <img src="https://bulma.io/images/placeholders/640x360.png" alt="Placeholder image">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content">
+                <p class="title is-5">Seismic Monitor</p>
+                <p class="subtitle is-6 ">Java</p>
+              </div>
+            </div>
+            <div class="content">
+              A Java Application monitoring earthquakes around the world and categorizing them.
+            </div>
+            <a href="https://github.com/asheerrizvi/seismicmonitor" target="_blank">Read More</a>
           </div>
         </div>
       </div>
