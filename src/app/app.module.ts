@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DeferLoadModule } from '@trademe/ng-defer-load';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
@@ -12,7 +13,6 @@ import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { MailService } from './services/mail.service';
-import { from } from 'rxjs';
 
 @NgModule({
   declarations: [
@@ -29,6 +29,7 @@ import { from } from 'rxjs';
     FormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
+    DeferLoadModule
   ],
   providers: [
     MailService,

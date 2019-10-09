@@ -20,6 +20,7 @@
     "@angular/platform-browser": "~8.0.1",
     "@angular/platform-browser-dynamic": "~8.0.1",
     "@angular/router": "~8.0.1",
+    "@trademe/ng-defer-load": "^3.0.2",
     "aos": "^2.3.4",
     "bulma": "^0.7.5",
     "bulma-extensions": "^6.2.7",

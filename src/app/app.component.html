@@ -43,20 +43,20 @@
     <app-home></app-home>
 </div>
 
-<div #skillsTarget>
-    <app-skills></app-skills>
+<div #skillsTarget (deferLoad)="showSkills=true">
+    <app-skills *ngIf=showSkills></app-skills>
 </div>
-<div #experienceTarget>
-    <app-experience></app-experience>
+<div #experienceTarget (deferLoad)="showExperience=true">
+    <app-experience *ngIf=showExperience></app-experience>
 </div>
-<div #workTarget>
-    <app-work></app-work>
+<div #workTarget (deferLoad)="showWork=true">
+    <app-work *ngIf=showWork></app-work>
 </div>
-<div #aboutTarget>
-    <app-about></app-about>
+<div #aboutTarget (deferLoad)="showAbout=true">
+    <app-about *ngIf=showAbout></app-about>
 </div>
-<div #contactTarget>
-    <app-contact></app-contact>
+<div #contactTarget (deferLoad)="showContact=true">
+    <app-contact *ngIf=showContact></app-contact>
 </div>
 
 <footer class="footer">

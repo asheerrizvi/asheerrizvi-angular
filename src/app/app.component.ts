@@ -9,6 +9,11 @@ import * as AOS from 'aos';
 
 export class AppComponent implements OnInit {
   title = 'asheerrizvi-angular';
+  showSkills = false;
+  showExperience = false;
+  showWork = false;
+  showAbout = false;
+  showContact = false;
 
   showScroll: boolean;
   showScrollHeight = 300;
