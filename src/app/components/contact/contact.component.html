@@ -12,13 +12,13 @@
       <div class="columns is-centered">
         <div class="column is-one-quarter">
           <div class="field">
-            <label class="label">Name</label>
             <div class="control is-expanded">
               <input class="input is-medium" type="text" id="name"
               required
               name="name" 
               [(ngModel)]="newMessage.name" 
-              #name="ngModel">
+              #name="ngModel"
+              placeholder="Name">
               <div *ngIf="name.invalid && (name.dirty || name.touched)">
                 <div *ngIf="name.errors.required">
                   <p class="help is-danger">Name is required.</p>
@@ -29,14 +29,14 @@
         </div>
         <div class="column is-one-quarter">
           <div class="field">
-            <label class="label">Email</label>
             <div class="control is-expanded">
               <input class="input is-medium" type="email" id="email"
               required
               [pattern]="emailPattern"
               name="email"
               [(ngModel)]="newMessage.email"
-              #email="ngModel">
+              #email="ngModel"
+              placeholder="Email">
               <div *ngIf="email.invalid && (email.dirty || email.touched)">
                 <div *ngIf="email.errors && email.errors.pattern"> 		   
                   <p class="help is-danger">Email is not valid.</p>
@@ -52,13 +52,13 @@
       <div class="columns is-centered">
         <div class="column is-half">
           <div class="field">
-            <label class="label">Mesasge</label>
             <div class="control is-expanded">
               <textarea class="textarea is-medium" rows="5"
               required
               name="message"
               [(ngModel)]="newMessage.message"
-              #message="ngModel"></textarea>
+              #message="ngModel"
+              placeholder="Your Message"></textarea>
               <div *ngIf="message.invalid && (message.dirty || message.touched)">
                 <div *ngIf="message.errors.required">
                   <p class="help is-danger">Message is required.</p>

@@ -1,14 +1,10 @@
-li {
-    font-size: 0.95rem;
-}
-
 .column-heading.heading-margin {
     margin-top: 0.75rem;
 }
 
 .tag.is-light {
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 0.85rem;
     letter-spacing: 0.1rem;
 }
 

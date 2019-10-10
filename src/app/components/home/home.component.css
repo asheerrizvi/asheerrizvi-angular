@@ -11,7 +11,6 @@
     .greeting {
         font-size: 3rem;
         margin-bottom: 2% !important;
-        font-weight: 600;
     }
 
     .primary-skills {
@@ -24,18 +23,12 @@
         border-color: #5d99fa;
         color: #5d99fa;
     }
-    
-    .button:hover {
-        background-color: #5d99fa;
-        color: white;
-    }
 }
 
 @media only screen and (max-width: 768px) {
     .greeting {
         font-size: 2rem;
         margin-bottom: 4% !important;
-        font-weight: 600;
     }
 
     .primary-skills {
@@ -45,19 +38,14 @@
 
     .button {
         display: block;
-        margin: 3rem auto 3rem auto !important;
+        margin: 3rem auto !important;
         -webkit-tap-highlight-color: transparent;
-    }
-
-    .button {
-        margin-top: 1.5rem;
-        font-size: 1.15rem;
         border-color: #5d99fa;
         color: #5d99fa;
     }
+}
 
-    .button:active {
-        background-color: #5d99fa;
-        color: white;
-    }
+.button:hover, .button:active {
+    background-color: #5d99fa;
+    color: white;
 }
