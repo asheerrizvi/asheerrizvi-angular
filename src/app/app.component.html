@@ -3,7 +3,7 @@
         <nav class="navbar is-transparent">
             <div class="navbar-brand">
                 <a class="navbar-item" href="#">
-                    <img src="https://bulma.io/images/bulma-logo.png" alt="Hey There! I am Asheer" width="112" height="28">
+                    <img src="../assets/bulma-logo.png" alt="Hey There! I am Asheer" width="112" height="28">
                 </a>
 
                 <a role="button" class="navbar-burger burger" (click)="toggleNavbar()" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" #navBurger>
@@ -24,7 +24,7 @@
                     </span>
 
                     <span class="navbar-item item-hover-repos" (click)="scrollToElement(workTarget)">
-                        My Work
+                        Work
                     </span>
 
                     <span class="navbar-item item-hover-about" (click)="scrollToElement(aboutTarget)">
@@ -43,20 +43,20 @@
     <app-home></app-home>
 </div>
 
-<div #skillsTarget (deferLoad)="showSkills=true">
-    <app-skills *ngIf=showSkills></app-skills>
+<div #skillsTarget>
+    <app-skills></app-skills>
 </div>
-<div #experienceTarget (deferLoad)="showExperience=true">
-    <app-experience *ngIf=showExperience></app-experience>
+<div #experienceTarget>
+    <app-experience></app-experience>
 </div>
-<div #workTarget (deferLoad)="showWork=true">
-    <app-work *ngIf=showWork></app-work>
+<div #workTarget>
+    <app-work></app-work>
 </div>
-<div #aboutTarget (deferLoad)="showAbout=true">
-    <app-about *ngIf=showAbout></app-about>
+<div #aboutTarget>
+    <app-about></app-about>
 </div>
-<div #contactTarget (deferLoad)="showContact=true">
-    <app-contact *ngIf=showContact></app-contact>
+<div #contactTarget>
+    <app-contact></app-contact>
 </div>
 
 <footer class="footer">
@@ -64,7 +64,7 @@
         <p>
             This website was crafted by <a href="https://asheerrizvi.herokuapp.com">Asheer Rizvi</a><br>
             <a href="https://bulma.io" target="_blank">
-                <img src="https://bulma.io/images/made-with-bulma--semiblack.png" alt="Made with Bulma" width="165" height="35" style="margin-top: 1.4rem;">
+                <img src="../assets/made-with-bulma.png" alt="Made with Bulma" width="165" height="35" style="margin-top: 1.4rem;">
             </a><br>
             <a href="https://angular.io" target="_blank">
                 <img src="../assets/angular.svg" alt="Made with Bulma" width="95" height="35" style="margin-bottom: 1.4rem;">
