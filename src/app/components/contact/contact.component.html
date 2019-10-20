@@ -13,12 +13,15 @@
         <div class="column is-one-quarter">
           <div class="field">
             <div class="control is-expanded">
-              <input class="input is-medium" type="text" id="name"
-              required
-              name="name" 
-              [(ngModel)]="newMessage.name" 
-              #name="ngModel"
-              placeholder="Name">
+              <label>Name
+                <input class="input is-medium" type="text" id="name"
+                  required
+                  name="name" 
+                  [(ngModel)]="newMessage.name" 
+                  #name="ngModel"
+                  placeholder="Name"
+                >
+              </label>
               <div *ngIf="name.invalid && (name.dirty || name.touched)">
                 <div *ngIf="name.errors.required">
                   <p class="help is-danger">Name is required.</p>
@@ -30,13 +33,16 @@
         <div class="column is-one-quarter">
           <div class="field">
             <div class="control is-expanded">
-              <input class="input is-medium" type="email" id="email"
-              required
-              [pattern]="emailPattern"
-              name="email"
-              [(ngModel)]="newMessage.email"
-              #email="ngModel"
-              placeholder="Email">
+              <label>Email
+                <input class="input is-medium" type="email" id="email"
+                  required
+                  [pattern]="emailPattern"
+                  name="email"
+                  [(ngModel)]="newMessage.email"
+                  #email="ngModel"
+                  placeholder="Email"
+                >
+              </label>
               <div *ngIf="email.invalid && (email.dirty || email.touched)">
                 <div *ngIf="email.errors && email.errors.pattern"> 		   
                   <p class="help is-danger">Email is not valid.</p>
@@ -53,12 +59,15 @@
         <div class="column is-half">
           <div class="field">
             <div class="control is-expanded">
-              <textarea class="textarea is-medium" rows="5"
-              required
-              name="message"
-              [(ngModel)]="newMessage.message"
-              #message="ngModel"
-              placeholder="Your Message"></textarea>
+              <label>Message
+                <textarea class="textarea is-medium" rows="5"
+                  required
+                  name="message"
+                  [(ngModel)]="newMessage.message"
+                  #message="ngModel"
+                  placeholder="Your Message"
+                ></textarea>
+              </label>
               <div *ngIf="message.invalid && (message.dirty || message.touched)">
                 <div *ngIf="message.errors.required">
                   <p class="help is-danger">Message is required.</p>
@@ -77,24 +86,24 @@
 
     <div class="columns is-centered is-mobile">
       <div class="column is-narrow">
-        <a class="button is-large social-media" href="https://twitter.com/rizvi_asheer" target="_blank">
+        <a class="button is-large social-media" href="https://twitter.com/rizvi_asheer" aria-label="Twitter" target="_blank" rel="noreferrer">
           <span class="icon is-small">
-            <svg class="fab fa-twitter"></svg>
+            <fa-icon [icon]="faTwitter"></fa-icon>
           </span>
         </a>
-        <a class="button is-large social-media" href="https://github.com/asheerrizvi" target="_blank">
+        <a class="button is-large social-media" href="https://github.com/asheerrizvi" aria-label="Github" target="_blank" rel="noreferrer">
           <span class="icon is-small">
-            <i class="fab fa-github"></i>
+            <fa-icon [icon]="faGithub"></fa-icon>
           </span>
         </a>
-        <a class="button is-large social-media" href="https://in.linkedin.com/in/asheer-rizvi" target="_blank">
+        <a class="button is-large social-media" href="https://in.linkedin.com/in/asheer-rizvi" aria-label="Linked In" target="_blank" rel="noreferrer">
           <span class="icon is-small">
-            <i class="fab fa-linkedin-in"></i>
+            <fa-icon [icon]="faLinkedinIn"></fa-icon>
           </span>
         </a>
-        <a class="button is-large social-media" href="mailto:asheer.vil@gmail.com">
+        <a class="button is-large social-media" href="mailto:asheer.vil@gmail.com" aria-label="Email">
           <span class="icon is-small">
-            <i class="fas fa-envelope"></i>
+            <fa-icon [icon]="faEnvelope"></fa-icon>
           </span>
         </a>
       </div>

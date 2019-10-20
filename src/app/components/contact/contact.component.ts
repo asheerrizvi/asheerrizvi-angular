@@ -10,6 +10,9 @@ import {
 import { Contact } from '../../models/contact';
 import { MailService } from '../../services/mail.service';
 
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faGithub, faLinkedinIn, faTwitter } from '@fortawesome/free-brands-svg-icons';
+
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
@@ -50,10 +53,13 @@ import { MailService } from '../../services/mail.service';
 })
 export class ContactComponent implements OnInit {
   public newMessage: Contact;
-  public messageSuccess;
-  public returnMessage;
+  private mailResponse;
   emailPattern = '^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$';
   state = 'default';
+  faEnvelope = faEnvelope;
+  faGithub = faGithub;
+  faLinkedinIn = faLinkedinIn;
+  faTwitter = faTwitter;
 
   constructor(private mailservice: MailService) { }
 
@@ -70,21 +76,7 @@ export class ContactComponent implements OnInit {
   }
 
   public onSubmit(contactForm) {
-    this.messageSuccess = 'pending';
-    this.returnMessage = 'Your message is being sent...';
-    this.mailservice.sendMessage(this.newMessage).subscribe(
-      MailResponse => {
-        if (MailResponse.success === true) {
-          this.messageSuccess = 'success';
-          this.returnMessage = 'Success: Message Sent!';
-
-        } else {
-          this.messageSuccess = 'failure';
-          this.returnMessage = 'Failure: Message Not Sent!';
-          console.log(MailResponse.message);
-        }
-      }
-    );
+    this.mailservice.sendMessage(this.newMessage).subscribe();
     this.state = 'sent';
     contactForm.resetForm();
   }

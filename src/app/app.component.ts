@@ -1,5 +1,6 @@
 import { Component, ViewChild, ElementRef, OnInit, HostListener } from '@angular/core';
 import * as AOS from 'aos';
+import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -14,6 +15,7 @@ export class AppComponent implements OnInit {
   showWork = false;
   showAbout = false;
   showContact = false;
+  faArrowUp = faArrowUp;
 
   showScroll: boolean;
   showScrollHeight = 300;

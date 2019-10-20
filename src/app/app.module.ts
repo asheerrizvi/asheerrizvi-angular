@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { DeferLoadModule } from '@trademe/ng-defer-load';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
@@ -29,7 +29,7 @@ import { MailService } from './services/mail.service';
     FormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    DeferLoadModule
+    FontAwesomeModule
   ],
   providers: [
     MailService,

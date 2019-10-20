@@ -20,8 +20,8 @@
     .button {
         margin-top: 1.5rem;
         font-size: 1.15rem;
-        border-color: #5d99fa;
-        color: #5d99fa;
+        border-color: #9561AA;
+        color: #9561AA;
     }
 }
 
@@ -40,12 +40,12 @@
         display: block;
         margin: 3rem auto !important;
         -webkit-tap-highlight-color: transparent;
-        border-color: #5d99fa;
-        color: #5d99fa;
+        border-color: #9561AA;
+        color: #9561AA;
     }
 }
 
 .button:hover, .button:active {
-    background-color: #5d99fa;
+    background-color: #9561AA;
     color: white;
 }

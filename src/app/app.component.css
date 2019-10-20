@@ -38,8 +38,8 @@
   }
 
   .button {
-    border-color: #5d99fa;
-    color: #5d99fa;
+    border-color: #9561AA;
+    color: #9561AA;
     position:fixed;
     bottom:3vh !important;
     right:3vh;
@@ -47,7 +47,7 @@
   }
 
   .button:hover {
-    background-color: #5d99fa;
+    background-color: #9561AA;
     color: white;
   }
 }
@@ -58,8 +58,8 @@
   }
 
   .button {
-    border-color: #5d99fa;
-    color: #5d99fa;
+    border-color: #9561AA;
+    color: #9561AA;
     position:fixed;
     bottom:2vh;
     right:2vh;
@@ -67,8 +67,17 @@
   }
 
   .button:active {
-    background-color: #5d99fa;
+    background-color: #9561AA;
     color: white;
+  }
+
+  .navbar-burger {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .navbar-burger:hover {
+    background-color: white;
   }
 }
 
@@ -96,4 +105,17 @@ span {
 
 .show-scroll {
   opacity: 1;
+}
+
+.navbar.is-transparent .navbar-brand .navbar-item img{
+  max-width: 2.75rem;
+  max-height: 2.75rem;
+}
+
+a {
+  color: #9561AA;
+}
+
+a:hover {
+  color: #4A4A4A;
 }

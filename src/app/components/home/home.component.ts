@@ -14,6 +14,6 @@ export class HomeComponent implements OnInit {
   }
 
   downloadResume() {
-    window.open('https://tinyurl.com/y4w5xlmh', '_self');
+    window.open('https://drive.google.com/file/d/1939z2OaqiFFkQPo7v6Dsk6JXn5YMROHp/view?usp=sharing', '_self');
   }
 }

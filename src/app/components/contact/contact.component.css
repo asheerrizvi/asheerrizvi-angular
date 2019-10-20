@@ -4,7 +4,7 @@
     }
 
     .button:hover {
-        background-color: #5d99fa;
+        background-color: #9561AA;
         color: white !important;
     }
 
@@ -22,7 +22,7 @@
     }
 
     .button:active {
-        background-color: #5d99fa;
+        background-color: #9561AA;
         color: white !important;
     }
 
@@ -47,31 +47,13 @@ input, textarea {
 }
 
 .button {
-    border-color: #5d99fa;
-    color: #5d99fa;
+    border-color: #9561AA;
+    color: #9561AA;
 }
 
 .button.submit {
     font-size: 1.15rem;
-    border-color: #5d99fa;
-    color: #5d99fa;
+    border-color: #9561AA;
+    color: #9561AA;
     padding: 0 1.75rem;
-}
-
-
-
-.is-loading {
-    background-color: #5d99fa;
-}
-
-.pending {
-    color: #f5c423;
-}
-
-.success {
-    color: #85d800;
-}
-
-.failure {
-    color: #f05e59;
 }

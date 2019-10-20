@@ -26,11 +26,10 @@
             "styles": [
               "src/styles.css",
               "./node_modules/bulma/css/bulma.css",
-              "./node_modules/bulma-extensions/bulma-timeline/dist/css/bulma-timeline.min.css",
+              "./node_modules/bulma-timeline/dist/css/bulma-timeline.min.css",
               "./node_modules/aos/dist/aos.css"
             ],
             "scripts": [
-              "./node_modules/aos/dist/aos.js"
             ]
           },
           "configurations": {

@@ -15,3 +15,11 @@ p {
 p.heading {
     font-size: 0.85rem;
 }
+
+a {
+    color: #9561AA;
+}
+  
+a:hover {
+    color: #4A4A4A;
+}
