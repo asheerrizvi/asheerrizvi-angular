@@ -1,27 +1,43 @@
-# AsheerrizviAngular
+# asheerrizvi.com
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.3.
+This is a single page application built using [Bulma.io](https://bulma.io) on top of [Angular](https://angular.io). It uses a [Firebase Function](https://firebase.google.com/docs/functions) and is also deployed on [Firebase](https://firebase.com).
 
-## Development server
+## Getting Started
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+If you want to check it out on your local machine follow the instructions below, deployment instructions follow towards the end. 
 
-## Code scaffolding
+### Prerequisites
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+For getting started you need Angular and Firebase Tools, to install Angular you can follow the instructions [here](https://angular.io/guide/setup-local). Firebase tools can be installing using the npm package, instructions for which can be found [here](https://firebase.google.com/docs/cli).
 
-## Build
+### Installation
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Clone the repository on your local machine and execute the following from the root directory of the project
+```console
+asheerrizvi-angular:~$ npm install
+```
+I have intentionally left the Firebase functions sub folder along with the config files for reference. I recommend you to copy them in a separate location then delete the folder (functions) and files (.firebaserc and firebase.json) and start from scratch using the deployment section below. 
 
-## Running unit tests
+## Running Locally
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run the application on localhost using
+```
+ng serve --o
+```
 
-## Running end-to-end tests
+## Deployment
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+I have used Firebase for hosting this app, you can use any other hosting service if required. A Firebase function is also used in this app to send mails from the Angular front end without needing an explicit server implementation such as NodeJS.
 
-## Further help
+### Setting up Firebase
+Go to [Firebase](https://firebase.google.com/) and create a free account, you can then setup Firebase for deploying an Angular App by referring to this [this article](https://angularfirebase.com/lessons/deploying-an-angular-app-to-firebase/). Basically you have to do the following steps:
+```
+ng build --prod
+firebase login
+firebase init
+firebase deploy
+```
+If successful you will be able to see your deployed app using the URL displayed in the CLI. 
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+### Setting up Firebase Functions (optional)
+I have used a Firebase function as I wanted the ability to send emails without neednig a full fledged backend application (NodeJS in my case). I found [this article](https://medium.com/@edigleyssonsilva/cloud-functions-for-firebase-sending-e-mail-1f2631d1022e) to be very helpful and I would recommend you to follow the same approach. For reference you can checkout my implementation (functions/index.js) which I have left behind in the app. 
