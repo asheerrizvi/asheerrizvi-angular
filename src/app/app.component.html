@@ -16,22 +16,37 @@
             <div id="navbarExampleTransparentExample" class="navbar-menu" #navMenu>
                 <div class="navbar-end">
                     <span class="navbar-item item-hover-home" (click)="scrollToElement(homeTarget)">
+                        <span class="icon is-small mobile" style="color: #ff6166;">
+                            <fa-icon [icon]="faHome"></fa-icon>
+                        </span>
                         Home
                     </span>
 
                     <span class="navbar-item item-hover-skills" (click)="scrollToElement(skillsTarget)">
+                        <span class="icon is-small mobile" style="color: #ffd000;">
+                            <fa-icon [icon]="faPencilRuler"></fa-icon>
+                        </span>
                         Skills
                     </span>
 
                     <span class="navbar-item item-hover-repos" (click)="scrollToElement(workTarget)">
+                        <span class="icon is-small mobile" style="color:#33ff00;">
+                            <fa-icon [icon]="faLaptopCode"></fa-icon>
+                        </span>
                         Work
                     </span>
 
                     <span class="navbar-item item-hover-about" (click)="scrollToElement(aboutTarget)">
+                        <span class="icon is-small mobile" style="color:#41b2f8;">
+                            <fa-icon [icon]="faUser"></fa-icon>
+                        </span>
                         About
                     </span>
 
                     <span class="navbar-item item-hover-contact" (click)="scrollToElement(contactTarget)">
+                        <span class="icon is-small mobile" style="color:#b27bff;">
+                            <fa-icon [icon]="faComment"></fa-icon>
+                        </span>
                         Contact
                     </span>
                 </div>

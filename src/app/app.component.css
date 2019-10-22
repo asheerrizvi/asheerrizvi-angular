@@ -37,6 +37,10 @@
     border-bottom: 3px solid #b27bff;
   }
 
+  span.mobile {
+    display: none;
+  }
+
   .button {
     border-color: #9561AA;
     color: #9561AA;
@@ -78,6 +82,10 @@
 
   .navbar-burger:hover {
     background-color: white;
+  }
+
+  span.mobile {
+    margin-right: 0.45rem !important;
   }
 }
 
