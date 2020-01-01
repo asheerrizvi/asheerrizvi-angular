@@ -23,6 +23,11 @@
         border-color: #9561AA;
         color: #9561AA;
     }
+
+    .button:hover {
+        background-color: #9561AA;
+        color: white;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -43,9 +48,15 @@
         border-color: #9561AA;
         color: #9561AA;
     }
+
+    .button:active {
+        background-color: #9561AA;
+        color: white;
+    }
 }
 
-.button:hover, .button:active {
-    background-color: #9561AA;
-    color: white;
+.button:focus {
+    box-shadow: none;
 }
+
+

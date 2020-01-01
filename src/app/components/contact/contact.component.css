@@ -51,9 +51,29 @@ input, textarea {
     color: #9561AA;
 }
 
+.button:focus {
+    box-shadow: none;
+}
+
 .button.submit {
     font-size: 1.15rem;
     border-color: #9561AA;
     color: #9561AA;
     padding: 0 1.75rem;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    font-size: 1rem;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+    font-size: 1rem;
+}
+
+:-ms-input-placeholder { /* IE 10+ */
+    font-size: 1rem;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    font-size: 1rem;
 }

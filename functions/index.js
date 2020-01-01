@@ -7,8 +7,8 @@ admin.initializeApp();
 let transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: 'YOUR GMAIL EMAIL',
-        pass: 'YOUR GMAIL PASSWORD'
+        user: 'mailforwarder.asheerrizvi@gmail.com',
+        pass: 't8UW0j0lwGA0,2Z'
     }
 });
 

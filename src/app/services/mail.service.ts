@@ -11,9 +11,9 @@ export interface MailResponse {
 export class MailService {
   constructor(private http: HttpClient) { }
 
-  destOne = 'First Email Destination';
-  destTwo = 'Second Email Destination';
-  serverAPI = `https://YOUR FIREBASE FUNCTION URL?destOne=${this.destOne}&destTwo=${this.destTwo}`;
+  destOne = 'asheer.vil@gmail.com';
+  destTwo = 'mail@asheerrizvi.com';
+  serverAPI = `https://us-central1-asheerrizvi-angular-prod.cloudfunctions.net/sendMail?destOne=${this.destOne}&destTwo=${this.destTwo}`;
 
 
   public sendMessage(contact: Contact): Observable<MailResponse> {

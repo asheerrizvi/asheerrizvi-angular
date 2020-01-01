@@ -43,9 +43,8 @@
 
   .button {
     border-color: #9561AA;
-    color: #9561AA;
     position:fixed;
-    bottom:3vh !important;
+    bottom:3vh;
     right:3vh;
     box-shadow: 5px 5px 10px rgba(14, 14, 14, 0.2);
   }
@@ -63,11 +62,15 @@
 
   .button {
     border-color: #9561AA;
-    color: #9561AA;
     position:fixed;
     bottom:2vh;
     right:2vh;
     box-shadow: 5px 5px 10px rgba(14, 14, 14, 0.2);
+  }
+
+  .button:hover {
+    background-color: white;
+    color: #9561AA;
   }
 
   .button:active {
@@ -75,13 +78,16 @@
     color: white;
   }
 
-  .navbar-burger {
+  .navbar-burger.burger {
     margin-top: auto;
     margin-bottom: auto;
+    color: #9561AA;
+    background: transparent;
   }
 
-  .navbar-burger:hover {
-    background-color: white;
+  .navbar-burger.burger.is-active {
+    color: #9561AA;
+    background: transparent;
   }
 
   span.mobile {
