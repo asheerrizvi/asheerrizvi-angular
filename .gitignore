@@ -1,6 +1,3 @@
 node_modules
 .firebase
 dist
-.firebaserc
-firebase.json
-functions
